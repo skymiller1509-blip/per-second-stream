@@ -1,0 +1,12 @@
+node_modules/
+app/dist/
+app/src/*.js
+app/vite.config.js
+contracts/out/
+cache/
+contracts/cache/
+keys/
+.env
+.env.local
+.DS_Store
+lib/forge-std/.github/

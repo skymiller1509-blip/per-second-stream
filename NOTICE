@@ -1,0 +1,9 @@
+# Third-party code and licenses
+
+- Aevum Starter Kit (MIT, PQA Labs) — https://github.com/qday-io/aevum-starter-kit
+  Used as reference for the Aevum testnet chain details (chain 44005, RPC,
+  tUSD8 address), the Shanghai EVM notes, the faucet process, and the
+  submission checklist. No starter-kit code is copied into this repo.
+- forge-std (MIT) — https://github.com/foundry-rs/forge-std — test helpers.
+- viem (MIT) — https://github.com/wevm/viem — Ethereum client in the web app.
+- Vite (MIT) — https://github.com/vitejs/vite — web app build tool.
