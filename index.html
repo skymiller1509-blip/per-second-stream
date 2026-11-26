@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Per-Second Freelancer Stream — tUSD8 on Aevum</title>
+    <script type="module" crossorigin src="./assets/index-BXVrtvau.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DmgHF5ge.css">
+  </head>
+  <body>
+    <main>
+      <h1>Per-Second Freelancer Stream</h1>
+      <p class="sub">
+        A freelancer's pay streams every second in tUSD8, on Aevum testnet
+        (chain 44005). Built for the Aevum Builder Challenge #1 (QDay).
+      </p>
+
+      <section id="contract-box">
+        <label>
+          Stream contract address
+          <input id="contract-address" type="text" placeholder="0x… (paste after deploy)" spellcheck="false" />
+        </label>
+        <button id="save-contract">Save</button>
+        <span id="contract-status" class="muted"></span>
+      </section>
+
+      <section id="wallet-box">
+        <button id="connect">Connect wallet</button>
+        <button id="add-network">Add Aevum testnet to wallet</button>
+        <div id="wallet-info" class="muted">Not connected.</div>
+        <div id="balances" class="muted"></div>
+      </section>
+
+      <section id="create-box">
+        <h2>Start a stream</h2>
+        <label>
+          Freelancer address
+          <input id="freelancer" type="text" placeholder="0x…" spellcheck="false" />
+        </label>
+        <label>
+          Pay per second (tUSD8)
+          <input id="rate" type="number" min="0" step="0.000001" placeholder="0.01" />
+        </label>
+        <label>
+          Duration (hours)
+          <input id="duration-hours" type="number" min="0" step="0.25" placeholder="1" />
+        </label>
+        <div id="deposit-preview" class="muted"></div>
+        <button id="approve">1. Approve tUSD8</button>
+        <button id="create">2. Start stream</button>
+        <div id="create-status" class="muted"></div>
+      </section>
+
+      <section id="streams-box">
+        <h2>My streams</h2>
+        <p class="muted">
+          Streams where you are the employer or the freelancer. Balances tick
+          live, once a second, straight from the chain.
+        </p>
+        <button id="refresh">Refresh</button>
+        <div id="streams"></div>
+      </section>
+
+      <footer class="muted">
+        Testnet only. tUSD8 has no real value. Contract:
+        <a id="explorer-link" href="https://explorer-test.qday.info" target="_blank" rel="noreferrer"
+          >explorer-test.qday.info</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>
