@@ -22,11 +22,12 @@ Challenge page: https://dorahacks.io/hackathon/qday/detail
       Stream address
 - [x] **Deployed to the Aevum testnet 2026-11-24** (address above)
 - [x] MIT LICENSE, NOTICE crediting the starter kit
-- [ ] Public GitHub repo — **Eddie's step: create the repo**
+- [x] Public GitHub repo — https://github.com/skymiller1509-blip/per-second-stream (renamed 26 Nov 2026)
+- [x] Live demo site — https://skymiller1509-blip.github.io/per-second-stream/ (render-verified 27 Nov 2026)
 - [ ] Demo video — script in `VIDEO-SCRIPT.md`, Eddie films on his phone
       (live testnet flow: create → accrue → withdraw → cancel)
 - [ ] DoraHacks BUIDL page filled and submitted before **11 Dec 2026 09:00 WAT**
-      — **Eddie's step** (form + BUIDL page)
+      — **Eddie's step** (form + BUIDL page; draft ready in `BUIDL-DRAFT.md`, only the YouTube link is missing)
 
 ## Submission needs (from the challenge rules)
 
