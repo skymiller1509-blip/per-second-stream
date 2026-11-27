@@ -3,7 +3,30 @@
 A freelancer's pay streams every second in tUSD8 on the Aevum testnet.
 Built for the **Aevum Builder Challenge #1 (QDay)**, Track: **Payroll and Vesting**.
 
+**Live on Aevum testnet since 24 Nov 2026 — contract `0xbc6dD8c5c9E2a36A55c716339aBfF404b68F4D97`, 12 unit + 2 fork tests pass.**
+
+**Live demo:** https://skymiller1509-blip.github.io/per-second-stream/
 **Demo video:** TODO — film from `VIDEO-SCRIPT.md` (3 min, live testnet flow).
+
+## Hackathon Requirements Met
+
+Aevum Builder Challenge #1 (QDay), DoraHacks — deadline 11 Dec 2026, 09:00 WAT. Each requirement, with proof:
+
+- [x] Public GitHub repo — https://github.com/skymiller1509-blip/per-second-stream (renamed 26 Nov 2026).
+- [x] Aevum integration evidence — Stream contract deployed on chain 44005, `0xbc6dD8c5c9E2a36A55c716339aBfF404b68F4D97` (24 Nov 2026), explorer: https://explorer-test.qday.info; tUSD8 `0x456569838f1d43009A91ebA4263147Afd7233483`.
+- [x] Live deployment (working demo) — https://skymiller1509-blip.github.io/per-second-stream/ (render-verified 27 Nov 2026: loads, Start a stream and My streams sections present, balances tick once a second).
+- [x] Documentation — this README, with the exact commands and the real test results.
+- [ ] Demo video — script in `VIDEO-SCRIPT.md`; Eddie films on her phone (live testnet flow: create → accrue → withdraw → cancel).
+- [ ] DoraHacks BUIDL submitted before 11 Dec 2026 09:00 WAT (Eddie's step; draft ready in `BUIDL-DRAFT.md`, only the YouTube link is missing).
+
+Demo failure-proofing: the filmed stream is short (about 5 minutes, 0.08 hours at 0.01 tUSD8/s, about 3 tUSD8 deposit) so it fits the 4 tUSD8 the wallet holds. The contract calls the app makes are the same ones proven on the fork.
+
+## Judging Highlights
+
+- **Innovation:** pay that streams every second — the freelancer watches their balance tick up live, once a second, and pulls out what they have earned at any time.
+- **Technical execution:** contract deployed live on chain 44005; 12 unit tests and 2 fork tests pass; live-fork end to end proven (stream 0 accrued exactly 18,000,000 base units after 1,800 seconds; stream 1 cancelled after 900 seconds with the exact 9,000,000 accrued paid and the 27,000,000 remainder refunded).
+- **Impact:** freelancers wait weeks to get paid and then chase invoices. A stream pays continuously, and if the job ends early the employer cancels and gets back whatever has not accrued yet.
+- **Completeness:** contract + web app + docs, all live; the top 5 do a 3–5 minute live video-call walkthrough, and this demo is built for exactly that.
 
 ## The problem
 
@@ -135,8 +158,9 @@ faucet (1 tQDAY + 5 tUSD8), then run the deploy script.
 
 - The contract is deployed live on the Aevum testnet (see above) and the
   same flow was proven end to end on a local fork first.
-- The web app was never click-tested in a real browser (no display here);
-  the contract calls it makes are the same ones proven on the fork.
+- The live demo site was render-verified 27 Nov 2026 (loads, Start a
+  stream and My streams sections present, balances tick once a second);
+  the contract calls the app makes are the same ones proven on the fork.
 - The demo shows the stream ticking live; it does not do gasless payments
   (no public tQDAY paymaster exists yet) and it does not use ERC-8004 (the
   registry is still in internal testing and is not open for this challenge).
@@ -150,6 +174,7 @@ Full checklist: `SUBMISSION-CHECKLIST.md`.
 - [x] Web app built, builds clean, serves
 - [x] MIT LICENSE, NOTICE crediting the starter kit
 - [x] Deployed to Aevum testnet 2026-11-24 (`0xbc6dD8c5c9E2a36A55c716339aBfF404b68F4D97`)
-- [ ] Public GitHub repo (Eddie's step: create the repo)
+- [x] Public GitHub repo: https://github.com/skymiller1509-blip/per-second-stream (renamed 26 Nov 2026)
+- [x] Live demo site: https://skymiller1509-blip.github.io/per-second-stream/ (render-verified 27 Nov 2026)
 - [ ] Demo video (script: `VIDEO-SCRIPT.md`)
-- [ ] Submit on DoraHacks before 11 Dec 2026 09:00 WAT (Eddie's step)
+- [ ] Submit on DoraHacks before 11 Dec 2026 09:00 WAT (Eddie's step; BUIDL draft ready, only the YouTube link is missing)
